@@ -4,9 +4,9 @@
 %define debug_package %{nil}
 
 Name: kiconthemes
-Version: 4.99.0
-Release: 3
-Source0: http://ftp5.gwdg.de/pub/linux/kde/unstable/frameworks/%{version}/%{name}-%{version}.tar.xz
+Version: 5.0.0
+Release: 1
+Source0: http://ftp5.gwdg.de/pub/linux/kde/stable/frameworks/%{version}/%{name}-%{version}.tar.xz
 Summary: The KDE Frameworks 5 Icon theme library
 URL: http://kde.org/
 License: LGPL v2.1
@@ -59,8 +59,9 @@ Development files (Headers etc.) for %{name}.
 %makeinstall_std -C build
 mkdir -p %{buildroot}%{_libdir}/qt5
 mv %{buildroot}%{_prefix}/mkspecs %{buildroot}%{_libdir}/qt5
+%find_lang kiconthemes%{major}
 
-%files
+%files -f kiconthemes%{major}.lang
 %{_bindir}/*
 
 %files -n %{libname}
