@@ -27,6 +27,7 @@ BuildRequires: pkgconfig(Qt5DBus)
 BuildRequires: pkgconfig(Qt5Gui)
 BuildRequires: pkgconfig(Qt5Svg)
 BuildRequires: pkgconfig(Qt5Widgets)
+BuildRequires: pkgconfig(Qt5Test)
 Requires: %{libname} = %{EVRD}
 
 %description
