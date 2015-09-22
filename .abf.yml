@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kiconthemes-5.13.0.tar.xz: 031dd5f363cdd15afd37c978892dfc8fb14a698d
+sources:
+  kiconthemes-5.14.0.tar.xz: 29731629923eb2a7480833f44af8440f8ac456ec
