@@ -13,6 +13,7 @@ URL: http://kde.org/
 License: LGPL v2.1
 Group: System/Libraries
 BuildRequires: cmake(ECM)
+BuildRequires: cmake(KF5Archive)
 BuildRequires: cmake(KF5ItemViews)
 BuildRequires: cmake(KF5Config)
 BuildRequires: cmake(KF5ConfigWidgets)
