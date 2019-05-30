@@ -6,7 +6,7 @@
 
 Name: kiconthemes
 Version:	5.58.0
-Release:	1
+Release:	2
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Summary: The KDE Frameworks 5 Icon theme library
 URL: http://kde.org/
@@ -31,6 +31,7 @@ BuildRequires: pkgconfig(Qt5Xml)
 BuildRequires: doxygen
 BuildRequires: qt5-assistant
 Requires: %{libname} = %{EVRD}
+Requires: hicolor-icon-theme
 
 %description
 The KDE Frameworks 5 Icon theme library.
@@ -61,8 +62,7 @@ Suggests: %{devname} = %{EVRD}
 Developer documentation for %{name} for use with Qt Assistant
 
 %prep
-%setup -q
-%apply_patches
+%autosetup -p1
 %cmake_kde5
 
 %build
